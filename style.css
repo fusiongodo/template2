@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+#header-container{
+    margin: 10px 0px 0px 0px;
+    
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#sel1, #sel2{
+    position: relative;
+    border: 2px solid rgb(119, 119, 119);
+    width: max-content;
+    padding: 10px;
+    z-index: 1;
+}
+
+.sel-heading{
+    position: absolute;
+    bottom: 32px;
+    left: 20px;
+    font-size: 90%;
+    z-index: 2;
+    background-color: white;
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+    gap: 45px;
+
+}
+
+.day-container{
+    flex: 1;
+    flex-wrap: wrap;
+}
+.date-container{
+    margin-bottom: 20px;
+    font-size: 150%;
+    font-weight: bold;
+}
+.meal-container{
+    
+    height: 180px;
+    min-width: 200px;
+    /* background-color: rgb(178, 217, 178); */
+    border-top: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 0px;
+    overflow: hidden;
+
+}
+.mensa-container{
+    display: flex;
+    justify-content: space-between;
+}
+.mensa-name{
+    color: rgb(113, 113, 113);
+    font-size: 100%;
+    
+}
+.meal-name{
+    font-size: 110%;    
+    font-weight: 600;
+    margin: 0px;
+    margin-top: 5px;
+}
+.price{
+    font-weight: bold;
+    color: orange;
+}
+
+.rating{
+    font-size: 90%;
+    display: flex;
+    justify-content: end;
+    
+    padding: 0px 10px;
+}
+.rating p{
+    margin: 0px 2px;
+}
+.meal-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 80%;
+    color: rgb(113, 113, 113);
+    padding: 0px 10px;
+}
+
+
